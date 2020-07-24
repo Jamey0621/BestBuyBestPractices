@@ -7,7 +7,7 @@ using System.Text;
 
 namespace BestBuyBestPractices
 {
-    class DapperProductRepository : IProductRepository
+ public   class DapperProductRepository : IProductRepository
     {
         private readonly IDbConnection _connection;
         //Constructor

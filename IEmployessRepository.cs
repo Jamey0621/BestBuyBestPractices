@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BestBuyBestPractices
 {
-    interface IEmployessRepository
+   public  interface IEmployessRepository
     {
         IEnumerable<Employees> GetALLEmployees();
     }
