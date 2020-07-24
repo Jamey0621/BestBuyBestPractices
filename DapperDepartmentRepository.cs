@@ -24,7 +24,13 @@ namespace BestBuyBestPractices
         public void InsertDepartment(string newDepartmentName)
         {
             _connection.Execute("INSERT INTO DEPARTMENTS (Name) VALUES (@departmentName);",
-new { departmentName = newDepartmentName });
+            new { departmentName = newDepartmentName });
+        }
+
+        public void DeleteDepartment ( int DepID)
+        {
+            _connection.Execute("delete from departments where DepartmentID = @departmentID", 
+             new { departmentID = DepID }) ;
         }
 
 
