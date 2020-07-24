@@ -6,6 +6,6 @@ namespace BestBuyBestPractices
 {
     interface IEmployessRepository
     {
-        IEnumerable<Employees> GetALLDepartments();
+        IEnumerable<Employees> GetALLEmployees();
     }
 }
